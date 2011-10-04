@@ -8,10 +8,16 @@
 
 	<bean id="defaultDataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${dbDriverClassName}" />
+		<property name="url" value="${dbUrl}" />
+		<property name="username" value="${dbUsername}" />
+		<property name="password" value="${dbPassword}" />
+		<!--
 		<property name="driverClassName" value="org.postgresql.Driver" />
 		<property name="url" value="jdbc:postgresql://localhost:5432/pipe" />
 		<property name="username" value="pipe" />
 		<property name="password" value="pipe" />
+		 -->
 	</bean>
 
 </beans>

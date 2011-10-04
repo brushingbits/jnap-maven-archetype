@@ -17,11 +17,11 @@
 
 	<!-- Default annotation config -->
 	<mvc:annotation-driven />
-	<context:component-scan base-package="br.com.pipe.modulo.seguranca.controller" />
+	<context:component-scan base-package="${package}.controller" />
 
 	<!-- Restful SpringMVC extensions (JAX-RS annotations and jnap conventions support) -->
 	<util:properties id="jnapMappingProperties">
-		<prop key="basePackage">br.com.pipe.modulo.seguranca.controller</prop>
+		<prop key="basePackage">${package}.controller</prop>
 	</util:properties>
 	<import resource="classpath*:/org/brushingbits/jnap/spring/mvc-restful.xml" />
 

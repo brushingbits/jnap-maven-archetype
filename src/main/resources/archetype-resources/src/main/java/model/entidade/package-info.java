@@ -4,4 +4,4 @@
 /**
  * 
  */
-package ${package}.entidade;
+package ${package}.model.entidade;
